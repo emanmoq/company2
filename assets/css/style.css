@@ -5,7 +5,7 @@
 :root{
     --maincolor:#2568EF;
     --font-color:rgba(51, 51, 51, .5);
-
+    --background-color:#FFF5E8;
     --font-family:"JFFlatRegular";
     --btn-color:#FF564F;
     --mainFont-color:#333333;
@@ -32,7 +32,6 @@ ul{
 }
 ul li{
     list-style-type: none;
-    margin-bottom:19px;
 }
 body{
      font-size: 16px;
@@ -56,7 +55,8 @@ overflow-x: hidden;
     transition: all .5s;;
 }
 .mainBtn:hover{
-    background-color: var(--btn-color);
+    background-color: white;
+    color:var(--btn-color)
 }
 .hero{
     background-size: cover;
@@ -142,7 +142,7 @@ transition: all .5s;
     color:white;
 }
 .aboutUs{
-    background-color: #FFF5E8;;
+    background-color: var(--background-color);
     padding-top:80px;
     padding-bottom:60px
 }
@@ -168,17 +168,18 @@ margin:20px 0
     margin-top:50px;
 }
 .aboutText h2{
-    font-size:3.25;
+    font-size:3.25em;
     font-weight: bold;
     margin-bottom:20px;
 }
 
-.services{
-    padding-top:164px;
-    padding-bottom:250px;
+.work{
+    padding-top:95px;
+    padding-bottom:160px;
+    background-color: var(--background-color);
 }
 .sectionTitle{
-    margin-bottom:130px;
+    margin-bottom:70px;
     text-align: center;
 }
 .sectionTitle h4{
@@ -186,96 +187,164 @@ margin:20px 0
 margin-bottom:47px;
 font-size:2em;
 }
-
 .sectionTitle p{
-   font-size:1.3333333333333333em;
-    opacity: .5;
-    color:var(--font-color);
+    margin-bottom:32px;
 }
-.servicesBox{
-    border-radius: 4px;
-    padding:64px 40px;
-    text-align: center;
-    height: 400px;;
-}
-.serviceIcon{
-    max-width: 83px;
-    margin:auto;
-    margin-bottom: 40px;
-    text-align: center;
+.workBox {
+background-color: #FFFFFF;
+padding:32px;
+border-radius: 20px;
+position: relative;
 
 }
-.servicesBox:hover{
-    box-shadow:0 30px 50px rgba(0, 0, 0, 0.1) ;
+.workbg{
+    position: absolute;
+    left:70px;
+    top:70px;
+    width:75px
 }
-.servicesBox h4{
-    font-size:1.4444444444444444em;
-    margin-bottom: 24px;
+.wokIcon{
+    width:54px;
+    height:54px;
+    border-radius: 50%;
+    background-color: var(--maincolor);
+    display: block;
 }
-.servicesBox p{
-    font-size:1em;
-  color:var(--font-color);
+.workBox h4{
+    font-size:1.5em;
+    margin-bottom:20px;
+    font-weight: bold;
+    margin-top:160px;
+}
+.No{
+font-size: 4.5em;
+color:#FF9B19;
+position: absolute;
+left: 60px;
+top: 40px;
 }
 
-.aboutImg{
-    border-radius: 8px;
-    overflow:hidden;
-}
 .aboutText {
     margin-top:120px;
 
 }
-.aboutText h5{
-    font-size:1.5555555555555556em;
-    color:black;
+.advantages{
+    padding:120px 0;
 }
-.aboutText p{
-    font-size:1.2222222222em;
-    color:var(--font-color);
-margin-top:62px;
+.advantagesList{
+    max-width: 80%;;
 }
-.marginAbout{
-    margin-top:140px;
+.advantagesList li{
+    margin-bottom:20px;
 }
-.clients{
-    padding-top:150px;
-    padding-bottom:180px;
+.advantagesList li .Icon{
+    width:80px;
+    margin-left:20px;
+    display:block;
+    float:right
 }
-.clientBox{
-    padding:60px 20px;
-    border-radius: 4px;
-    box-shadow:0 30px 50px rgba(0, 0, 0, 0.1);
+.advantages .sectionTitle h4{
+    font-size:3.25em;
+
 }
-.clientBox h4{
-font-size:1.4444444444444444em;
-margin-top:30px;
-margin-bottom:25px;
+.advantagesList li h4{
+    font-size: 1.5em;
+    margin-bottom:10px;
 }
-.clientBox p{
-    font-size:1em;
-    color:var(--font-color);
-    margin-bottom:50px;
+.counterBox{
+    position: relative;
+    text-align: center;
+    padding:10px 30px;
 }
-.clientImg{
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
+.counterBG{
+    position: absolute;
+    right: 26%;
+    top: -33%;
+}
+.counter{
+    padding-top:126px;
+    padding-bottom:144px;
+    background-color: var(--maincolor);
+}
+.number{
+    font-size:3.5em;
+    color:white;
+}
+.counterBox h6{
+    font-size:1.2em;
+    color: white;
+    margin-bottom:20px;;
+}
+.counterBox p{
+    color:white;
+}
+.team{
+    padding-top:95px;
+    padding-bottom:160px;;
+}
+.teamBox{
+    width:100%;
+    background-color: var(--background-color);
+    border-radius: 20px;
     overflow: hidden;
-    float: right;
+    height:430px;
+    transition: all .5s;;
 }
-.clientName{
-    float:right;
-    margin-right:20px;
-    width:70%;
+.teamBox:hover{
+    background-color: var(--btn-color);
 }
-.clientName h4{
-    font-size:1em;
+.teamBox:hover .memberImg{
+    height:60%;
+    transition: all .5s;;
+
+}
+.teamBox:hover .memberImg img{
+    height:auto;
+    width:100%;
+    transition: all .2s;;
+    object-fit: fill;
+}
+.teamBox:hover .memberDetails{
+    margin-top:-10%;
+    transition: all .5s;;
+}
+.memberImg{
+    height:70%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all .5s;;
+}
+.memberImg img{
+    width:auto;
+    height: 100%;
+    transition: all .2s;;
+
+}
+.memberDetails{
+    padding:42px 22px;
+    transition: all .5s;;
+
+}
+.memberDetails h4{
+    font-size:1.5em;
     color:var(--mainFont-color);
-    margin-bottom: 7px;;
+    margin-bottom:5px;
 }
-.clientName span{
-    font-size:0.8888888888888888em;
-    color:#004FCD;
+.teamBox:hover .memberDetails h4,.teamBox:hover .memberDetails p{
+    color:white;
+}
+.memberDetails .socialIcons{
+    margin-top:32px;
+    float:none;
+    text-align: right;
+}
+.memberDetails .socialIcons li{
+    width:48px;
+    height: 48px;
+    background-color: rgba(255,255,255,.07);
+}
+.memberDetails .socialIcons li a{
+    color:white;
 }
 .owl-carousel .owl-stage-outer{
     overflow:visible
@@ -288,35 +357,147 @@ margin-bottom:25px;
    opacity: 1;
  }
 
-
-.subscribeBox {
-    margin-top:50px;
+.portfoilo{
+    padding:83px 0 90px;
 }
-.subscribeForm{
-    position: relative;
+.portfoilo .sectionTitle{
+    margin-bottom:30px;
+}
+.nav-pills{
+    margin:auto;
+    height:48px;
+    margin-bottom:48px;
     border-radius: 5px;
     overflow: hidden;
-    margin-bottom:0;
 }
-.subscribeBox .form-group{
+.nav-pills .nav-item{
+    width:105px;
+    background-color:rgba(37, 104, 239, .1) ;
+ 
+}
+.nav-pills .nav-item .nav-link{
+    color:var(--font-color);
+    text-align: center;
+    height:100%;
+}
+.nav-pills .nav-item .nav-link.active{
+background-color: var(--maincolor);
+color:white;
+}
+.portfoilo .pagination{
     width:100%;
+    text-align: center;
+    margin-top:32px;
+    display: inline-block;
 }
-.subscribeBox .form-control{
-    background-color: white;
-    border-radius: 5PX;
-    height:48px;
-}
-.subscribeBtn {
-position: absolute;
+.pagination .page-item{
+    margin-left:15px;
+    display: inline-block;
 
-LEFT:0;
-top:0;
-border-radius: 5px 0 0 5px;;
+}
+.pagination-lg .page-item .page-link{
+    width:50px;
+    height:50px;
+    border-radius: 50% !important;
+    border:0;
+    background-color:rgba(37, 104, 239, .1);
+    color:var(--font-color);
+    text-align: center;
+    padding:0;
+    line-height: 50px;;
+    transition: all .5s;
+
+}
+.pagination-lg .page-item.active .page-link{
+    background-color: var(--maincolor);
+    color:white;
+    transition: all .5s;
+}
+.tallImg{
+    height:480px;
+}
+.galleryItem{
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom:32px;
+}
+.galleryItem img{
+    width:100%;
+    height:100%;
+}
+
+.shortImg{
+    height:352px;
+}
+
+.contactUs{
+    padding:83px 0 91px;
+    background-color: var(--background-color);
+}
+.gfield_required{
+    display: none;;
+}
+.contactForm{
+    background-color: white;;
+    padding:39px 48px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contactForm h6{
+    font-size:1.2em;
+    color:var(--mainFont-color);
+    margin-bottom:25px;
+    font-weight: bold;
+}
+.contactForm .form-contol::placeholder{
+    font-size:1em;
+    color:var(--font-color)
+}
+.contactForm .form-control{
+    width:100%;
+    height:48px;
+    border:1px solid #DADADA; 
+}
+.contactForm  .form-group{
+margin-bottom: 15px;;
+}
+.contactForm textarea.form-control{
+    height:90px;
+    resize: none;
+}
+.contactForm  .mainBtn{
+    margin-top:17px;
+}
+.contactText{
+    margin-top:100px;
+}
+.contactText h6{
+    font-size:1.2em;
+    color:var(--mainFont-color);
+    font-weight: bold;
+    margin-bottom:20px;
+}
+.contactList li{
+    margin-bottom:12px;
+}
+.contactList li h6{
+    font-size:1em;
+    color:var(--mainFont-color)
+}
+.socialIcons.socialContact{
+    float: none;
+    margin-top:32px;
+}
+.socialIcons.socialContact li{
+background-color: #324A58;
+}
+.socialIcons.socialContact li a{
+    color:white;
 }
 footer{
-    background-color: #272B4B;
-    padding-top:300px;
-    padding-bottom:90px;
+    background-color: #324A58;
+    padding:25px 0;
 }
 .subscribeBtn:hover{
     background-color: transparent;
@@ -345,48 +526,44 @@ footer .logo{
 }
 .socialIcons li{
     display: inline-block;
-    width:42px;
-    height:42px;
+    width:48px;
+    height:48px;
     border-radius: 50%;
     background-color:white;
-    margin-right:15px;
+    margin-left:8px;
     text-align: center;
     transition: all .5s;
-
 }
+
 .socialIcons li a{
     color:#272B4B;
 line-height: 20px;
 font-size:20px;
 }
 .socialIcons li i{
-    line-height: 40px;;
+    line-height: 46px;;
 }
 .socialIcons li:hover{
-    background-color: rgba(0,0,0,.1);
+    background-color: var(--btn-color);
     transition: all .5s;
 }
-.facebook:hover a{
+.socialIcons li.facebook:hover a{
     color:#3b5998 ;
 }
-.twitter:hover a {
+.socialIcons li.twitter:hover a {
     color:#00acee;
 }
-.insta:hover a{ 
+.socialIcons li.insta:hover a{ 
     COLOR: #FD1D1D;
 }
-.copyRights {
-    margin-top:50px;
-    text-align: center;
-}
-.copyRights h3{
+
+footer p{
     text-align: center;
     font-size:.8888em;
-    color:#8291AB;
+    color:rgba(255,255,255,.5);
+    text-align: center;
 }
-.modal.show .modal-dialog{
-    max-width: 70%;;
-}
+
 .close{
     display: none;
     text-align: left;
@@ -397,7 +574,7 @@ font-size:20px;
     top: 0 !important;
     z-index: 555;
     animation-duration: .5s;
-    background: #272B4B;
+    background: #324A58;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
     transition: 1s all;
@@ -411,95 +588,80 @@ font-size:20px;
 .btn{
     line-height: 37px;
 }
-footer i{
-    width:30px;
-    height:30px;
-}
-footer .fas.fa-phone-volume{
-color:#272B4B
+.overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 99;
+    display: none;
 }
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px
     }
+    header{
+        padding-top:20x;
+    }
     .owl-carousel .owl-stage-outer{
     overflow: hidden;
 }
-    .heroImg img{
-        width:100%;
-        height: auto;
-    }
+.navbar-collapse{
+    position: absolute;
+    width:70%;
+    background-color: white;
+    right: -30px;
+    top: -37px;
+    height:100vh;
+    z-index: 9999;
+    padding: 0 20px
+}
+.navbar-brand.logo {
+    float: right;
+    width: 87px;
+    margin-left: 90px;
+    margin-right: 0;
+}
+.socialIcons{
+    float: none;;
+}
+.socialIcons li{
+    background-color:#324A58 ;
+}
+.socialIcons li a{
+    color:white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link,.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
+    color:var(--maincolor)
+}
+.close{
+    display: block;
+}
     .hero{
-        padding:20px 0;
-        background-image:none;
-        background-image: linear-gradient(45deg ,#426CD9,#284BA6);
+        padding:150px 0;
+   
     }
-    .heroImg{
-        margin-top:0;
-    
+    .workBox{
+        margin-bottom:20px;
+        height:auto
     }
-    .contactBtn{
-        width:100%;
-    float: none;
+    .workBox h4{
+        margin-top:70px;
     }
     .heroSection .subscribeBox{
-        width:100%;
-        position: relative;
-        top:auto;
-        right:auto;
         margin-top:20px;
     }
-    .navbar-expand-lg .navbar-nav .nav-link:before{
-        display:none;
-    }
-    .subscribeBtn{
-        height: 70px;
-        width: 113px;
-    }
-.services{
-    padding:50px 0;
-}
 .sectionTitle{
     margin-bottom:50px;
 }
 
-.servicesBox{
-    height:auto;
-    padding:30px;
-}
-.marginAbout{
-    margin-top: 20px;;
-}
-.clients{
-    padding:50px 0;
-}
-.subscribe{
-    top:auto;
-}
-.subscribe .container{
-    border-radius: 0;
-    padding:30px 20px;;
-}
-   footer{
-       padding:20px 0;
-   }
     .socialIcons{
         text-align: right;
         margin-top:20px;
         margin-bottom:20px;
     }
-    footer .logo{
-        float: none;
-    }
-    .socialIcons li{
-        float: none;
-    }
-    .requestBtn{
-        width:100%;
-    }
-    .heroText{
-        margin-top: 90px;
-    }
+
     button.navbar-toggler {
         position: relative;
         border: none;
@@ -508,6 +670,7 @@ color:#272B4B
         cursor: pointer;
         border-radius: 0;
         opacity: .7;
+        left: 16px;
         border:1px solid white;
         text-align: center;
     }
@@ -524,11 +687,6 @@ color:#272B4B
     .mobileMenu i:last-child{
     margin-bottom: 0;;
     }
-
-    .navbar{
-        width:100%;
-        margin-bottom:20px;
-    }
     .nav-link{
         margin-bottom:10px;
         margin-top:10px;
@@ -536,10 +694,34 @@ color:#272B4B
     .contactUs{
         padding:20px 0;
     }
-    .marginBox{
-        margin-top:50px
+.nav-pills .nav-item{
+width:auto;
+}
+.nav-pills .nav-item .nav-link{
+    margin:0;
+    height: 100%;;
+}
+.portfoilo,.team,.counter{
+    padding:50px 0
+}
+    .counterBox{
+        margin-bottom:20px;
     }
-    
+    .tallImg,.shortImg{
+        height: auto;
+    }
+    .galleryItem img{
+        height: auto;
+    }
+    .nav-pills{
+        height:36px;
+    }
+    .contactForm{
+        padding:20px;
+    }
+    .contactForm .mainBtn{
+        width:100%
+    }
 }
 @media(min-width:768px) and (max-width:1023px){
     body{
@@ -549,21 +731,41 @@ color:#272B4B
         overflow: hidden;
         padding:20px 5;
     }
-    .clientBox{
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    .navbar-collapse{
+        position: absolute;
+        width:70%;
+        background-color: white;
+        right: -30px;
+        top: -37px;
+        height:100vh;
+        z-index: 9999;
+        padding: 0 20px
     }
-
-   .marginAbout{
-       margin-top:0;
-   }
-   .clients{
-       padding:50px 0;
-   }
-   .sectionTitle{
-       margin-bottom:20px;
-   }
-   .services{
-    padding:50px 0;
+    .navbar-brand.logo {
+        float: right;
+        width: 87px;
+        margin-left: 90px;
+        margin-right: 0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item .nav-link,.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
+        color:var(--maincolor)
+    }
+    .socialIcons li{
+        background-color:#324A58 ;
+    }
+    .socialIcons li a{
+        color:white;
+    }
+    
+    .close{
+        display: block;
+    }
+        .hero{
+            padding:150px 0;
+       
+        }
+.workBox{
+    margin-bottom:30px;
 }
 .sectionTitle{
     margin-bottom:50px;
@@ -580,48 +782,54 @@ footer{
     margin-bottom:50px;
 }
 
-    .hero{
-        padding:20px 0;
+.portfoilo,.team,.counter{
+    padding:50px 0
+}
+    .counterBox{
+        margin-bottom:20px;
     }
-  
-    .socialIcons{
-        text-align: center;
-    }
-    .socialIcons li{
-        float: none;
-    }
-  .marginBox{
-      margin-top:0;
-  }
-    .heroText{
-        margin-top: 20px;
-    }
+.socialIcons{
+    float: none;
+}
 
     .subscribeBtn{
         width:140px;
     }
-
-    .marginForm{
-        margin-left:24px;
+    button.navbar-toggler {
+        position: relative;
+        border: none;
+        height: 40px;
+        width:50px;
+        cursor: pointer;
+        border-radius: 0;
+        opacity: .7;
+        left: 16px;
+        border:1px solid white;
+        text-align: center;
+        display: block;
     }
-    .navbar-expand-lg .navbar-collapse{
-        display: flex;
-        flex-basis: auto;
-         }
-        .navbar-toggler{
-        
-            display: none;
-         } 
-    .navbar{
-        width:70%;
-        margin-top:20px;
+ 
+    .mobileMenu i{
+        background-color: white;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 95%;
+        height: 3px;
+        margin-bottom:5px
     }
-         .navbar-nav {
-            display: -ms-flexbox;
-            display: flex;}
-            .navbar-expand-lg .navbar-nav {
-                -ms-flex-direction: row;
-                flex-direction: row;
-            }
+    .mobileMenu i:last-child{
+    margin-bottom: 0;;
+    }
     
+}
+@media(min-width:1024px) and(max-width:1200px){
+    .navbar-brand.logo {
+        float: none;
+        width: 102px;
+        margin-left: 32px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item{
+        padding:10px 15px;
+    }
 }

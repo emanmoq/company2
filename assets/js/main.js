@@ -1,6 +1,6 @@
 jQuery(function ($) {
 //declare slider (owl-carousel slider)
-  $('.clientCarusel').owlCarousel({
+  $('.teamCarousel').owlCarousel({
     autoplay: true,
     loop: false,
     margin: 15,
@@ -11,13 +11,14 @@ jQuery(function ($) {
     responsive: {
       0: {
         items: 1,
+        margin:0
 
       },
       600: {
         items: 2,
       },
       1000: {
-        items: 3,
+        items: 4,
 
       }
       
@@ -55,8 +56,6 @@ jQuery(function ($) {
 //add fix header when scroll down and remove when back up
     if (scrollTop > $('header').height()) {
       $('header').addClass('scrollNav');
-
-
     }
 
     else {
@@ -67,7 +66,18 @@ jQuery(function ($) {
   //close menu when choose item
   $(".navbar .nav-link").click(function(){
     $(".collapse").removeClass("show");
+  });
+  $(".navbar-toggler").click(function(){
+    $(".overlay").css("display","block")
+  });
+  $(".close").click(function(){
+    $(".overlay").css("display","none");
+    $(".collapse").removeClass('show');
   })
+  $(".overlay").click(function(){
+    $(this).css("display","none");
+    $(".collapse").removeClass('show');
+  });
 
 });
 
