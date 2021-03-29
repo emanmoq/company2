@@ -68,7 +68,7 @@ jQuery(function ($) {
     $(".collapse").removeClass("show");
   });
   $(".navbar-toggler").click(function(){
-    $(".overlay").css("display","block")
+    $(".overlay").toggle()
   });
   $(".close").click(function(){
     $(".overlay").css("display","none");
